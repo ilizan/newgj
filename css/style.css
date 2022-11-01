@@ -1,7 +1,12 @@
+@font-face {
+	font-family:fz;
+	src: url('./../fonts/DS-Digital\ Bold.ttf');
+}
 *{
     margin: 0;
     padding: 0;
 }
+
 ul,li{
     display: block;
     list-style: none;
@@ -38,27 +43,35 @@ ul,li{
     width: 500px;
     top: 67px;
     left: 87px;
-    border: 1px solid red;
 }
 .count li{
-    line-height: 70px;
-    font-size: 24px;
-    letter-spacing:3px
+    line-height: 65px;
+    letter-spacing:3px;
 }
 .count li.text_2{
-    margin-top: 29px;
+    margin-top: 30px;
 }
 .count li.text_3{
     margin-top: 29px;
     
 }
-.count li label{
+.count li > label{
     color: #FFF;
+    font-size: 26px;
+    margin-left: 25px;
+    margin-right: 5px;
 }
 .count li span{
-    background-image:-webkit-linear-gradient(left, red, pink);
+    background-image:-webkit-linear-gradient(left, #aad8e7, #00ffb3);
+    color: #00ffb3;
     -webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
+    font-size: 16px;
+    font-family:'fz';
+    display: inline-block;
+}
+.count li span > label{
+    font-size: 34px;
 }
 /* 底部 */
 .menu_main{

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./swiper/swiper.min.css">
     <script src="./swiper/swiper.min.js"></script>
+    <script src="./js/countUp.js"></script>
 </head>
 
 <body>
@@ -24,15 +25,21 @@
             <ul class="count">
                 <li>
                     <label>项目总数</label>
-                    <span>xxxxx个</span>
+                    <span>
+                        <label id="val1"></label>个
+                    </span>
                 </li>
                 <li class="text_2">
                     <label>实名制人数</label>
-                    <span>xxxxx人</span>
+                    <span>
+                        <label id="val2"></label>人
+                    </span>
                 </li>
                 <li class="text_3">
                     <label>代发金额</label>
-                    <span>xxxxx元</span>
+                    <span>
+                        <label id="val3"></label>元
+                    </span>
                 </li>
             </ul>
         </div>
@@ -82,8 +89,13 @@
             disableOnInteraction: false,
         },
     });
-    function toPage(index){
-        console.log("页面跳转"+index);
+    function toPage(index) {
+        console.log("页面跳转" + index);
+    }
+    window.onload = function () {
+        new CountUp('val1', 23980).start();
+        new CountUp('val2', 4709045).start();
+        new CountUp('val3', 160886254950).start();
     }
 </script>
 
