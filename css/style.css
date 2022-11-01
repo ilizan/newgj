@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    display: block;
+    list-style: none;
+}
+.main{
+    background: url('./../img/bg.png') no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+.top_main{
+    /* background: url('./../img/bt.png') no-repeat;
+    background-position: center center; */
+
+    text-align: center;
+}
+.top_main img{
+    max-width: 90%;
+}
+.to_home{
+    text-align: center;
+}
+.to_home img{
+    cursor: pointer;
+}
+.content{
+    background: url('./../img/ptgk.png') no-repeat;
+    height: 371px;
+    width: 676px;
+    margin: 30px auto 0;
+    position: relative;
+}
+.count{
+    position: absolute;
+    width: 500px;
+    top: 67px;
+    left: 87px;
+    border: 1px solid red;
+}
+.count li{
+    line-height: 70px;
+    font-size: 24px;
+    letter-spacing:3px
+}
+.count li.text_2{
+    margin-top: 29px;
+}
+.count li.text_3{
+    margin-top: 29px;
+    
+}
+.count li label{
+    color: #FFF;
+}
+.count li span{
+    background-image:-webkit-linear-gradient(left, red, pink);
+    -webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+/* 底部 */
+.menu_main{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 50px auto 0;
+}
+
+
+.swiper-container {
+    /* width: 100%; */
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+.swiper-slide .imgTag{
+    width: 226px;
+    height: 228px;
+    margin: 0 auto;
+}

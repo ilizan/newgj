@@ -6,17 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
+    <script src="./swiper/swiper.min.js"></script>
 </head>
 
 <body>
-    index
+    <div class="main">
+        <div class="top_main">
+            <img src="./img/bt.png">
+        </div>
+        <div class="to_home">
+            <img src="./img/qhsy2.png">
+        </div>
+
+        <div class="content">
+            <ul class="count">
+                <li>
+                    <label>项目总数</label>
+                    <span>xxxxx个</span>
+                </li>
+                <li class="text_2">
+                    <label>实名制人数</label>
+                    <span>xxxxx人</span>
+                </li>
+                <li class="text_3">
+                    <label>代发金额</label>
+                    <span>xxxxx元</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu_main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" onclick="toPage(1)">
+                        <div class="imgTag">
+                            <img src="./img/smz.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="toPage(2)">
+                        <div class="imgTag">
+                            <img src="./img/xmtc.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="toPage(3)">
+                        <div class="imgTag">
+                            <img src="./img/yhdf.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="toPage(4)">
+                        <div class="imgTag">
+                            <img src="./img/yjzx.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
 
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        //   spaceBetween: 10,//间距
+        //   centeredSlides: true,
+        loop: true,
+
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+        },
+    });
+    function toPage(index){
+        console.log("页面跳转"+index);
+    }
+</script>
 
 
 <script>
+    //以下为统计代码，在使用时需删除
     var _hmt = _hmt || [];
     (function () {
         var hm = document.createElement("script");
