@@ -28,6 +28,7 @@ ul,li{
 }
 .to_home{
     text-align: center;
+    margin-top: 10px;
 }
 .to_home img{
     cursor: pointer;
@@ -36,7 +37,7 @@ ul,li{
     background: url('./../img/ptgk.png') no-repeat;
     height: 371px;
     width: 676px;
-    margin: 30px auto 0;
+    margin: 15px auto 0;
     position: relative;
 }
 .count{
